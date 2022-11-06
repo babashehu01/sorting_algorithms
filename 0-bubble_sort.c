@@ -3,17 +3,18 @@
 #include "sort.h"
 
 /**
- * bubble_sort- sort an array of integers
+ * bubble_sort - sort an array of integers
  *
- * @array- array pointer
+ * @array: array pointer
+ * @size: sizeof array
  *
  */
 void bubble_sort(int *array, size_t size)
 {
-	int temp, swap = 0;
-	int long unsigned i;
+	int temp, swap;
+	unsigned long int i;
 
-	for (i = 0; i<(size -1); i++)
+	for (i = 0; i < (size - 1); i++)
 	{
 		if (array[i] > array[i + 1])
 		{

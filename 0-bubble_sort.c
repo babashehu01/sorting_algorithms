@@ -8,11 +8,11 @@
  * @array- array pointer
  *
  */
-void bubble_sort(int *array, size_t size);
+void bubble_sort(int *array, size_t size)
 {
-	int temp, j, i, swap;
+	int temp, i, swap;
 
-	for(i = 0; i < size -1; i++)
+	for(i = 0; i < (size -1); i++)
 	{
 		if (array[i] > array[i + 1])
 		{
@@ -20,7 +20,7 @@ void bubble_sort(int *array, size_t size);
 			array[i] = array[i + 1];
 			array[i + 1] = temp;
 			swap++;
-			print_array(array, size)
+			print_array(array, size);
 		}
 		if (swap == 1)
 		{
@@ -29,6 +29,4 @@ void bubble_sort(int *array, size_t size);
 		}
 
 	}
-
-
-
+}
